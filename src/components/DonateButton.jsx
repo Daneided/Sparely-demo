@@ -1,11 +1,12 @@
-import './DonateButton.css';
+import '../styles/DonateButton.css';
+import logo from '../assets/products/logo.svg';
 
 
-export const DonateButton = () => {
+export const DonateButton = ( { onClick } ) => {
     return (
-        <div className="container">
+        <div className="container-donate" onClick={onClick}>
         <p className='donate-text'>Donate spare change</p>
-        <img src="/images/Framelogo.svg" alt="logo" />
+        <img src={logo} alt="logo" className='logo' />
         </div>
 
     );

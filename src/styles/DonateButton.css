@@ -1,5 +1,5 @@
-.container{
-    width: 200px;
+.container-donate{
+    width: 204px;
     height: 47px;
     border-radius: 44px;
     border: 3px solid #0B735A;
@@ -7,6 +7,8 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-direction: row;
+    cursor: pointer;
 }
 
 .donate-text {
@@ -17,4 +19,9 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+}
+
+.logo{
+    width: 43.451px;
+        height: 42.32px;
 }

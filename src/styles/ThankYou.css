@@ -1,4 +1,4 @@
-.container{
+.container-thank{
     width: 268px;
 height: 255px;
 flex-shrink: 0;
@@ -31,7 +31,7 @@ line-height: normal;
     line-height: normal;
   }
   
-  .logo {
+  .logo-thank {
     width: 112.751px;
     height: 106.25px;
   }

@@ -1,4 +1,4 @@
-.container{
+.container-suggest{
     width: 309px;
 height: 288px;
 flex-shrink: 0;
@@ -47,7 +47,7 @@ align-items: center;
     font-size: 18px; /* Adjust the size as needed */
   }
   
-  .payDonateButton {
+  #payDonateButton {
     background-color: #008060; /* Adjust button color as needed */
     color: white;
     border: none;
@@ -58,6 +58,6 @@ align-items: center;
     width: 80%; /* Adjust as needed */
   }
   
-  .payDonateButton:hover {
+  #payDonateButton:hover {
     background-color: #006047; /* Darker shade for hover effect */
   }

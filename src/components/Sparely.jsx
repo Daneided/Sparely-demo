@@ -13,7 +13,7 @@ export const Sparely = () => {
   const resetStage = () => setStage(0);
 
   return (
-    <>
+    <>  
       {stage === 0 && <DonateButton onClick={nextStage} />}
       {stage === 1 && <ChooseCharity onSelect={nextStage} />}
       {stage === 2 && <SuggestRoundUp onConfirm={nextStage} onChange={prevStage} />}
