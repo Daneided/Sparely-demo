@@ -30,11 +30,11 @@ display: flex;
   .charityList {
     list-style: none;
     padding: 0;
-    width: 100%; /* Adjust width as needed */
+    width: 100%; 
   }
   
   .charityList li {
-    background: #F5F5F5; /* Adjust color as needed */
+    background: #F5F5F5; 
     margin: 10px 10px;
     padding: 10px;
     border-radius: 10px;
@@ -42,14 +42,22 @@ display: flex;
     font-size: 16px;
     cursor: pointer;
   }
+
+  .charityList li:first-child {
+    margin: 0 10px;
+  }
+
+  .charityList li:last-child {
+    margin: 0px 10px;
+  }
   
   #button-choose {
-    background-color: #008060; /* Adjust button color as needed */
+    background-color: #008060; 
     color: white;
     border: none;
     padding: 10px 30px;
     border-radius: 20px;
-    font-size: 16px;
+    font-size: 11px;
     cursor: pointer;
     border: 2px solid transparent;
     transition: background-color 0.3s, border-color 0.3s;
@@ -58,11 +66,10 @@ display: flex;
   #button-choose:hover {
     background-color: transparent;
     color: #008060;
-    border-color: #008060; /* Hover state */
+    border-color: #008060; 
   }
 
   .charityList li.selected {
-    background-color: #008060; /* Light grey, adjust as needed */
-    color: #000; /* Change text color if needed */
-    /* Add other styles to indicate selection */
+    background-color: #008060; 
+    color: #000; 
 }

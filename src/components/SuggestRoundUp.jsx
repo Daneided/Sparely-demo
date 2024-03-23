@@ -1,7 +1,21 @@
 import '../styles/SuggestRoundUp.css';
 import logo from '../assets/products/logo.svg';
+import { useContext } from 'react';
+import { ShopContext } from '../context/shop-context';
 
-export  const SuggestRoundUp = () => {
+export  const SuggestRoundUp = ({onConfirm}) => {
+
+ // Convert totalAmount to a number (if it's a string)
+ const {  getTotalCartAmount } = useContext(ShopContext);
+ const amountNumber = getTotalCartAmount();
+
+ // Calculate the spare change
+ const roundedUpAmount = Math.ceil(amountNumber);
+ const spareChange = (roundedUpAmount - amountNumber).toFixed(2);
+
+
+
+
     return (
         <div className='container-suggest'>
        
@@ -10,10 +24,10 @@ export  const SuggestRoundUp = () => {
                 <img className='logo' src={logo} alt="logo" />
             </div>
             <div className='amountWrapper'>
-        <p className='donateAmount'>0,41лв.</p>
-        <p className='roundUpText'>Round up from: 31,59лв.</p>
+        <p className='donateAmount'>{spareChange}лв.</p>
+        <p className='roundUpText'>Round up from: {amountNumber}лв.</p>
       </div>
-      <button id='payDonateButton'>Pay & Donate</button>
+      <button id='payDonateButton' onClick={onConfirm}>Pay & Donate</button>
         </div>
     );
 }
