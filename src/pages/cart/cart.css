@@ -6,10 +6,11 @@
 }
 
 .cartItem {
-  width: 700px;
-  height: 250px;
+  width: 100%; /* Full width on mobile */
+  max-width: 700px; /* Max width for larger screens */
+  height: auto; /* Dynamic content adaptation */
   display: flex;
-
+  flex-direction: column; /* Stacked layout on mobile */
   align-items: center;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
   border-radius: 25px;
@@ -17,12 +18,15 @@
 }
 
 .cartItem img {
-  width: 200px;
+  width: 100%; /* Responsive image */
+  max-width: 200px; /* Max image width */
+  margin-bottom: 20px; /* Spacing between image and description */
 }
 
 .cartItem .description {
-  width: 100%;
-  font-size: 30px;
+  width: 90%; /* Adjusted width */
+  font-size: 20px; /* Smaller font size for mobile */
+  text-align: center; /* Centered text */
 }
 
 .countHandler input {
@@ -40,4 +44,12 @@
   border-radius: 8px;
   margin: 10px;
   cursor: pointer;
+}
+
+.checkout {
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  margin-bottom: 150px; /* Space below the checkout div */
 }

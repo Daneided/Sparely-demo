@@ -31,7 +31,13 @@ export const ChooseCharity = ({ onSelect }) => {
                     </li>
                 ))}
             </ul>
-            <button id='button-choose' onClick={onSelect}>Continue</button>
+            <button
+                id='button-choose'
+                onClick={() => selectedCharity && onSelect()}
+                disabled={!selectedCharity} // Button is disabled if no charity is selected
+            >
+                Continue
+            </button>
         </div>
     );
 };

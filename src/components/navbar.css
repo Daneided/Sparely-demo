@@ -3,19 +3,21 @@
   height: 80px;
   background-color: rgb(187, 20, 115);
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between; /* Changed from flex-end to space-between for better spacing on mobile */
   align-items: center;
+  flex-wrap: wrap; /* Allows items to wrap in smaller screens */
 }
 
 .links {
   margin-right: 50px;
   display: flex;
   align-items: center;
+  flex-wrap: wrap; /* Wrap links if navbar is too narrow */
 }
 
 .links a {
   text-decoration: none;
   color: white;
-  margin-left: 20px;
-  font-size: 25px;
+  margin: 10px; /* Reduced margin for smaller screens */
+  font-size: 20px; /* Adjusted font size for better readability on mobile */
 }

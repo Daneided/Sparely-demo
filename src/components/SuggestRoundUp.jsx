@@ -24,8 +24,8 @@ export  const SuggestRoundUp = ({onConfirm}) => {
                 <img className='logo' src={logo} alt="logo" />
             </div>
             <div className='amountWrapper'>
-        <p className='donateAmount'>{spareChange}лв.</p>
-        <p className='roundUpText'>Round up from: {amountNumber}лв.</p>
+        <p className='donateAmount'>{spareChange}$.</p>
+        <p className='roundUpText'>Round up from: {amountNumber}$.</p>
       </div>
       <button id='payDonateButton' onClick={onConfirm}>Pay & Donate</button>
         </div>
