@@ -1,0 +1,63 @@
+.container{
+    width: 309px;
+height: 288px;
+flex-shrink: 0;
+border-radius: 44px;
+border: 7px solid #0B735A;
+background: #FFF;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+
+.wrapper{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header {
+    font-size: 24px; /* Adjust the size as needed */
+    font-weight: bold;
+    color: #333; /* Adjust the color as needed */
+    margin-bottom: 20px;
+  }
+  .amountWrapper {
+    text-align: center;
+    margin: 0 1rem;
+  }
+  
+  .donateAmount {
+    font-size: 36px; /* Adjust the size as needed */
+    font-weight: bold;
+    margin: 0;
+    padding: 10px 20px;
+    border: 2px solid #0B735A;
+    border-radius: 22px; /* Half of full circle */
+    color: #0B735A; /* Adjust text color as needed */
+    background: #FFF;
+  }
+  
+  .roundUpText {
+    margin-top: 10px; /* Adjust as needed */
+    color: #666; /* Adjust the color as needed */
+    font-size: 18px; /* Adjust the size as needed */
+  }
+  
+  .payDonateButton {
+    background-color: #008060; /* Adjust button color as needed */
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 22px; /* Adjust as needed */
+    font-size: 18px; /* Adjust the size as needed */
+    cursor: pointer;
+    width: 80%; /* Adjust as needed */
+  }
+  
+  .payDonateButton:hover {
+    background-color: #006047; /* Darker shade for hover effect */
+  }
